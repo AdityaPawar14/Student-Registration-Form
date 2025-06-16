@@ -18,16 +18,8 @@ A simple, user-friendly **Student Registration System** built using **HTML, CSS,
 
 ## 🛠️ Tech Stack
 
-- HTML5
+- HTML
 - CSS
 - JavaScript
 ---
 
-## 📂 Folder Structure
-
-student-registration-system/
-│
-├── index.html # Main HTML file
-├── style.css # Styling
-├── script.js # All JavaScript logic
-└── README.md # Project documentation
