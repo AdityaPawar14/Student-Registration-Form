@@ -1,0 +1,238 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #FFB347 , #FFCCCB , #DDA0DD , #98FB98 , #87CEEB );
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 60px;
+}
+
+.main-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* Form Section Styles */
+.form-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    width: 140px;
+    text-align: left;
+}
+
+.form-group input {
+    margin-left: 20px;
+    padding: 8px 15px;
+    border: 2px solid #666;
+    border-radius: 25px;
+    background: white;
+    color: black;
+    width: 250px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #333;
+}
+
+.add-button {
+    display: block;
+    margin: 40px auto 0;
+    background: #666;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background: #555;
+}
+
+/* Table Section Styles */
+.table-section {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.table-header {
+    background: rgba(173, 216, 230, 0.8);
+    border-bottom: 2px solid #666;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 80px 80px;
+    gap: 10px;
+    padding: 12px;
+}
+
+.table-header div {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.table-body {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 80px 80px;
+    gap: 10px;
+    padding: 12px;
+    border-bottom: 1px solid #666;
+    align-items: center;
+}
+
+.table-row:nth-child(odd) {
+    background: rgba(144, 238, 144, 0.6);
+}
+
+.table-row:nth-child(even) {
+    background: rgba(152, 251, 152, 0.6);
+}
+
+.table-row div {
+    color: black;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.action-button {
+    background: #666;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.action-button:hover {
+    background: #555;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    color: rgba(0, 0, 0, 0);
+    font-size: 1.1rem;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    
+    .form-group input {
+        margin-left: 0;
+        margin-top: 5px;
+        width: 100%;
+    }
+    
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr 60px 60px 60px 60px 60px;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #000;
+    backdrop-filter: blur(4px);
+}
+
+.footer a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #333;
+    text-decoration: underline;
+}

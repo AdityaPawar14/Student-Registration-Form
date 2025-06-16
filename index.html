@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <h1>Student Registration System</h1>
+            
+            <div class="main-content">
+                <!-- Form Section -->
+                <div class="form-section">
+                    <form id="studentForm">
+                        <div class="form-group">
+                            <label for="studentName">Student Name :</label>
+                            <input type="text" id="studentName" name="studentName" placeholder="Enter student name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="studentId">Student Id :</label>
+                            <input type="text" id="studentId" name="studentId" placeholder="Enter student ID" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="class">Class :</label>
+                            <input type="text" id="class" name="class" placeholder="Class" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="rollNo">Roll No. :</label>
+                            <input type="text" id="rollNo" name="rollNo" placeholder="Enter Roll No" required>
+                        </div>
+                        
+                        <button type="button" class="add-button" onclick="addStudent()">Add</button>
+                    </form>
+                </div>
+                
+                <!-- Table Section -->
+                <div class="table-section">
+                    <div class="table-header">
+                        <div>Name</div>
+                        <div>Id</div>
+                        <div>Class</div>
+                        <div>Roll NO.</div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    
+                    <div class="table-body" id="tableBody">
+                        <div class="empty-state" id="emptyState">
+                            No students registered yet
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Created by Aadi | <a href="https://github.com/AdityaPawar14/Student-Registration-Form" target="_blank">My GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
